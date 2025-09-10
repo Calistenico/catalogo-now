@@ -5,9 +5,12 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo e descrição */}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">MultiLoja</h3>
+            <h3 className="text-2xl font-bold mb-4">
+              <span className="text-white">Compras</span>
+              <span className="text-accent">Ofc</span>
+            </h3>
             <p className="text-primary-foreground/80 mb-4 max-w-md">
-              A plataforma completa para criar sua loja online e vender mais. 
+              Crie seu catálogo online de produtos com pedidos via WhatsApp. 
               Simples, rápido e integrado com suas redes sociais.
             </p>
           </div>
@@ -44,10 +47,10 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contato</h4>
             <ul className="space-y-2">
               <li className="text-primary-foreground/80">
-                contato@multiloja.com
+                contato@comprasofc.com
               </li>
               <li className="text-primary-foreground/80">
-                (11) 99999-9999
+                (44) 99108-2160
               </li>
             </ul>
           </div>
@@ -57,7 +60,7 @@ export const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-primary-foreground/80 text-sm">
-            © 2024 MultiLoja. Todos os direitos reservados.
+            © 2025 <span className="font-semibold">ComprasOfc</span>. Todos os direitos reservados.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-primary-foreground/80 hover:text-white transition-colors text-sm">

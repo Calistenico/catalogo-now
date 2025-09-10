@@ -17,8 +17,9 @@ export const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="text-2xl font-bold text-primary">
-            MultiLoja
+          <div className="text-2xl font-bold">
+            <span className="text-primary">Compras</span>
+            <span className="text-accent">Ofc</span>
           </div>
           
           {/* Desktop Navigation */}
@@ -47,7 +48,11 @@ export const Header = () => {
             >
               Contato
             </button>
-            <Button variant="hero" size="sm">
+            <Button 
+              variant="hero" 
+              size="sm"
+              onClick={() => window.open('https://comprasofc.com/comece/', '_blank')}
+            >
               Começar Agora
             </Button>
           </nav>
@@ -89,7 +94,12 @@ export const Header = () => {
               Contato
             </button>
             <div className="pt-2">
-              <Button variant="hero" size="sm" className="w-full">
+              <Button 
+                variant="hero" 
+                size="sm" 
+                className="w-full"
+                onClick={() => window.open('https://comprasofc.com/comece/', '_blank')}
+              >
                 Começar Agora
               </Button>
             </div>

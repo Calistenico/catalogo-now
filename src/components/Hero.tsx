@@ -10,17 +10,23 @@ export const Hero = () => {
           {/* Content */}
           <div className="text-white space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              Crie sua loja online 
-              <span className="text-accent"> hoje mesmo</span>
+              Crie sua loja online com
+              <span className="text-accent bg-gradient-to-r from-accent to-accent-hover bg-clip-text text-transparent"> COMPRASOFC</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
               Plataforma completa para vender online com integração WhatsApp, 
               catálogo digital e muito mais.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="cta" size="lg" className="group">
-                Começar Grátis
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <Button 
+                variant="cta" 
+                size="lg" 
+                className="group relative overflow-hidden"
+                onClick={() => window.open('https://comprasofc.com/comece/', '_blank')}
+              >
+                <span className="relative z-10">Começar Grátis</span>
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform relative z-10" />
+                <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
               </Button>
               <Button variant="outline" size="lg" className="text-white border-white/30 hover:bg-white/10">
                 <Play className="mr-2 h-5 w-5" />
@@ -45,16 +51,16 @@ export const Hero = () => {
 
           {/* Image */}
           <div className="relative">
-            <div className="relative z-10">
+            <div className="relative z-10 animate-float">
               <img 
                 src={heroImage} 
-                alt="Loja online no celular" 
+                alt="Loja online no celular ComprasOfc" 
                 className="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
               />
             </div>
             {/* Decorative elements */}
-            <div className="absolute -top-4 -right-4 w-72 h-72 bg-accent/20 rounded-full blur-3xl"></div>
-            <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
+            <div className="absolute -top-4 -right-4 w-72 h-72 bg-accent/20 rounded-full blur-3xl animate-pulse-glow"></div>
+            <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
           </div>
         </div>
       </div>

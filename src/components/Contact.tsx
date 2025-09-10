@@ -24,7 +24,11 @@ export const Contact = () => {
             <p className="text-muted-foreground mb-4">
               Fale conosco diretamente pelo WhatsApp
             </p>
-            <Button variant="hero" className="bg-green-500 hover:bg-green-600">
+            <Button 
+              variant="hero" 
+              className="bg-green-500 hover:bg-green-600"
+              onClick={() => window.open('https://wa.me/5544991082160', '_blank')}
+            >
               Chamar no WhatsApp
             </Button>
           </div>
@@ -38,7 +42,10 @@ export const Contact = () => {
             <p className="text-muted-foreground mb-4">
               Envie suas dúvidas por email
             </p>
-            <Button variant="outline">
+            <Button 
+              variant="outline"
+              onClick={() => window.open('mailto:contato@comprasofc.com', '_blank')}
+            >
               Enviar Email
             </Button>
           </div>
@@ -66,8 +73,14 @@ export const Contact = () => {
           <p className="text-white/90 text-lg mb-6">
             Sem compromisso, sem taxas de instalação
           </p>
-          <Button variant="cta" size="lg" className="bg-white text-primary hover:bg-gray-100">
-            Criar Minha Loja Agora
+          <Button 
+            variant="cta" 
+            size="lg" 
+            className="bg-white text-primary hover:bg-gray-100 group relative overflow-hidden"
+            onClick={() => window.open('https://comprasofc.com/comece/', '_blank')}
+          >
+            <span className="relative z-10">Criar Minha Loja Agora</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/10 to-primary/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
           </Button>
         </div>
       </div>
